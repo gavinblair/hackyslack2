@@ -13,7 +13,7 @@ import (
 func init() {
 	r := os.Getenv("ROLL_COMMAND")
 	if r == "" {
-		r = "roll"
+		r = "roII"
 	}
 	hackyslack.Register(r, command)
 }

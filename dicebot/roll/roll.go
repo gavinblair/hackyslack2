@@ -138,7 +138,7 @@ func (r *Dice) Roll() {
 	}
 	num := r.Number
 	for i := 0; i < num; i++ {
-		n := rand.Intn(r.Sides) + 1
+		n := r.Sides
 		if r.Fudge {
 			n -= 2
 		}
